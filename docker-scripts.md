@@ -12,3 +12,8 @@ To stop the project press ctl + C (or `docker-compose down` if you ran in `--det
 Other useful commands for debugging are `docker-compose down -v` which clears the container volumes, and `docker-compose up --build` which rebuilds the image before starting.
 
 When connection is open you should have access to psql. Test it with command: `psql -h 0.0.0.0 -p 5432 -d postgres -U myadmin -c "SELECT NOW()"`. You should current date
+
+## Docker Image
+
+- `docker image ls`
+- `docker image prune`

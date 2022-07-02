@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Layout from "./components/Layout";
 import Main from "./components/Main";
 import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   // just testing api
@@ -19,10 +20,14 @@ function App() {
   }, []);
 
   return (
-    <Layout>
-      <Header />
-      <Main />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

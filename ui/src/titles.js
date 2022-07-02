@@ -1,4 +1,4 @@
-// TODO: Maybe give dynamic ids
+// TODO: give dynamic ids
 export const test_titles = [
   {
     id: 1,
